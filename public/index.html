@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspectieformulier - Ritsma</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button type="button" id="voegSectieToe">Voeg Sectie Toe</button>
+            <button type="button" id="opslaanFormulier">Opslaan</button>
+            <button type="button" id="exporteerPdf">Exporteer als PDF</button>
+            <button type="button" id="exporteerWord">Exporteer als Word</button>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Inspectieformulier</h1>
+        <form id="inspectieForm">
+            <div id="secties"></div> <!-- Hier worden dynamische secties toegevoegd -->
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
