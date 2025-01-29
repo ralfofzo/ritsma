@@ -177,6 +177,12 @@ app.get('/exporteer-word', async (req, res) => {
 });
 
 // ✅ **Start de server**
+// ✅ Voeg dit toe voor de app.listen regel
+app.get('/', (req, res) => {
+    res.send('Welkom bij mijn Inspectie App!'); // Simpele tekstweergave
+});
+
+// ✅ **Start de server**
 app.listen(port, () => {
     console.log(`🚀 Server draait op http://localhost:${port}`);
 });
