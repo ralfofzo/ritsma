@@ -9,7 +9,8 @@ const Docxtemplater = require('docxtemplater');
 const ImageModule = require('docxtemplater-image-module-free');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000; // Gebruik de poort die Render specificeert
+
 const uploadDir = path.join(__dirname, 'uploads');
 
 const dataFile = path.join(__dirname, 'data.json');
