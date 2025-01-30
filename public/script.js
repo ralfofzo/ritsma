@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Functie om een preview van de afbeelding te tonen
     function toonAfbeeldingPreview(input, previewContainer) {
         const file = input.files[0];
         if (file) {
@@ -47,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
             };
             reader.readAsDataURL(file);
         } else {
-            previewContainer.innerHTML = ''; // Leeg de preview als er geen afbeelding is
+            previewContainer.innerHTML = '';
         }
     }
 
@@ -87,12 +86,10 @@ document.addEventListener('DOMContentLoaded', function () {
             <button class="verwijderSectie">Verwijder</button>
         `;
 
-        // Voeg een event listener toe voor het uploaden van afbeeldingen
         const fotoInput = nieuweSectie.querySelector('.foto');
         const fotoPreview = nieuweSectie.querySelector('.foto-preview');
 
-        // Toon een standaard preview (grijs vak) bij het aanmaken van een nieuwe sectie
-        fotoPreview.innerHTML = ''; // Grijs vak wordt getoond door de CSS
+        fotoPreview.innerHTML = '';
 
         fotoInput.addEventListener('change', function () {
             toonAfbeeldingPreview(fotoInput, fotoPreview);
@@ -150,10 +147,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         alert(await response.text());
-    });
-
-    document.getElementById('exporteerPdf').addEventListener('click', function () {
-        window.location.href = '/exporteer-pdf';
     });
 
     document.getElementById('exporteerWord').addEventListener('click', function () {

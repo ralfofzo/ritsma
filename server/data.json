@@ -1,17 +1,4 @@
 {
-  "secties": [
-    {
-      "bevindingen": "",
-      "actie": "",
-      "door": "",
-      "urgentie": "",
-      "ernst": "",
-      "omvang": "",
-      "intensiteit": "",
-      "conditie": ""
-    }
-  ],
-  "images": [
-    "1738190118165-d8ed993e7eab7a4f5a6e1628da36462d.jpg"
-  ]
+  "secties": [],
+  "images": []
 }

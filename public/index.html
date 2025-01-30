@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inspectieformulier - Ritsma</title>
@@ -9,10 +11,13 @@
 <body>
     <header>
         <nav>
-            <button type="button" id="voegSectieToe">Voeg Sectie Toe</button>
+            <button id="voegSectieToe">+</button>
             <button type="button" id="opslaanFormulier">Opslaan</button>
-            <button type="button" id="exporteerPdf">Exporteer als PDF</button>
-            <button type="button" id="exporteerWord">Exporteer als Word</button>
+            <button id="exporteerWord">
+                <i class="fa-solid fa-file-word"></i>
+            </button>
+            
+            
         </nav>
     </header>
     <div class="container">

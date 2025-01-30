@@ -159,3 +159,118 @@ button:hover {
     max-height: 100%;
     border-radius: 10px;
 }
+
+#navigatieBalk {
+    position: fixed;
+    bottom: 20px; /* Afstand vanaf de onderkant */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px; /* Ruimte tussen de knoppen */
+}
+
+#navigatieBalk button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#sectieTeller {
+    position: fixed;
+    bottom: 100px; /* Meer ruimte boven de knoppen */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    background: white; /* Optioneel: achtergrondkleur om overlapping te voorkomen */
+    padding: 5px 10px; /* Optioneel: maakt de tekst beter zichtbaar */
+    border-radius: 5px; /* Optioneel: afgeronde hoeken voor een mooiere stijl */
+}
+
+.verwijderSectie {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.verwijderSectie:hover {
+    background-color: darkred;
+}
+#opslaanFormulier {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#opslaanFormulier:hover {
+    background-color: darkgreen;
+}
+#voegSectieToe {
+    background-color: #007bff; /* Blauwe kleur */
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50%; /* Maakt de knop rond */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#voegSectieToe:hover {
+    background-color: #0056b3; /* Donkerdere blauw bij hover */
+}
+#exporteerWord {
+    background-color: #1E88E5; /* Blauw zoals Word */
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%; /* Maakt de knop rond */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#exporteerWord i {
+    color: white; /* Zorgt ervoor dat het icoon zichtbaar blijft */
+}
+
+#exporteerWord:hover {
+    background-color: #1565C0; /* Donkerder blauw bij hover */
+}
+
+.sectie {
+    position: relative;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+.verwijderSectie {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
